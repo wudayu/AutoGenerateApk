@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_app" >
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ll_top_fragment_houses"
+        android:background="@drawable/toptit_bg" >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/width_top_icon_houses_detail"
+            android:layout_height="@dimen/height_top_icon_houses_detail"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:background="@drawable/btn_back"
+            android:contentDescription="@null" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_activity_sun_mechanism"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px40" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_fragment_recom_child"
+            android:paddingRight="@dimen/padding_fragment_recom_child"
+            android:paddingTop="@dimen/padding_fragment_recom_child" >
+            <LinearLayout
+                android:id="@+id/ll_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_ll_sheet_fragment_recom_child"
+                android:paddingRight="@dimen/padding_ll_sheet_fragment_recom_child"
+                android:paddingTop="@dimen/padding_ll_sheet_fragment_recom_child" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_ll_sheet_fragment_recom_child"
+                    android:layout_marginBottom="@dimen/dp_three"
+                    android:background="@drawable/shape_sheet_item_fragment_recom"
+                    android:paddingLeft="@dimen/dp_eight"
+                    android:paddingRight="@dimen/dp_eight" >
+                    <ImageView
+                        android:id="@+id/iv_user_nick"
+                        android:layout_width="@dimen/dp_sixteen"
+                        android:layout_height="@dimen/dp_sixteen"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_five"
+                        android:background="@drawable/login_ico_nickname"
+                        android:contentDescription="@null" />
+                    <EditText
+                        android:id="@+id/edt_user_nick"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_edt_ll_sheet_fragment_recom_child"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_user_nick"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_edt_reg_user_nick"
+                        android:minWidth="@dimen/width_edt_intent_city_district_fragment_recom_child"
+                        android:textColorHint="@color/col_words_inactive_grey"
+                        android:textSize="@dimen/px32" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_ll_sheet_fragment_recom_child"
+                    android:layout_marginBottom="@dimen/dp_three"
+                    android:background="@drawable/shape_sheet_item_fragment_recom"
+                    android:paddingLeft="@dimen/dp_eight"
+                    android:paddingRight="@dimen/dp_eight" >
+                    <ImageView
+                        android:id="@+id/iv_reg_phone"
+                        android:layout_width="@dimen/dp_sixteen"
+                        android:layout_height="@dimen/dp_sixteen"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_five"
+                        android:background="@drawable/login_ico_phone"
+                        android:contentDescription="@null" />
+                    <EditText
+                        android:id="@+id/edt_reg_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_edt_ll_sheet_fragment_recom_child"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_reg_phone"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_edt_reg_phone"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColorHint="@color/col_words_inactive_grey"
+                        android:textSize="@dimen/px32" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_ll_sheet_fragment_recom_child"
+                    android:layout_marginBottom="@dimen/dp_three"
+                    android:background="@drawable/shape_sheet_item_fragment_recom"
+                    android:paddingLeft="@dimen/dp_eight"
+                    android:paddingRight="@dimen/dp_eight" >
+                    <ImageView
+                        android:id="@+id/iv_user_name"
+                        android:layout_width="@dimen/dp_sixteen"
+                        android:layout_height="@dimen/dp_sixteen"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_five"
+                        android:background="@drawable/login_ico_username"
+                        android:contentDescription="@null" />
+                    <EditText
+                        android:id="@+id/edt_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_edt_ll_sheet_fragment_recom_child"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_user_name"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_edt_username"
+                        android:minWidth="@dimen/width_edt_intent_city_district_fragment_recom_child"
+                        android:textColorHint="@color/col_words_inactive_grey"
+                        android:textSize="@dimen/px32" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_ll_sheet_fragment_recom_child"
+                    android:layout_marginBottom="@dimen/dp_three"
+                    android:background="@drawable/shape_sheet_item_fragment_recom"
+                    android:paddingLeft="@dimen/dp_eight"
+                    android:paddingRight="@dimen/dp_eight" >
+                    <ImageView
+                        android:id="@+id/iv_reg_password"
+                        android:layout_width="@dimen/dp_sixteen"
+                        android:layout_height="@dimen/dp_sixteen"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_five"
+                        android:background="@drawable/login_ico_password"
+                        android:contentDescription="@null" />
+                    <EditText
+                        android:id="@+id/edt_reg_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_edt_ll_sheet_fragment_recom_child"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_reg_password"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_edt_reg_password"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/col_words_inactive_grey"
+                        android:textSize="@dimen/px32" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_ll_sheet_fragment_recom_child"
+                    android:layout_marginBottom="@dimen/dp_three"
+                    android:background="@drawable/shape_sheet_item_fragment_recom"
+                    android:paddingLeft="@dimen/dp_eight"
+                    android:paddingRight="@dimen/dp_eight" >
+                    <ImageView
+                        android:id="@+id/iv_reg_password_again"
+                        android:layout_width="@dimen/dp_sixteen"
+                        android:layout_height="@dimen/dp_sixteen"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_five"
+                        android:background="@drawable/login_ico_passwordagain"
+                        android:contentDescription="@null" />
+                    <EditText
+                        android:id="@+id/edt_reg_password_again"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_edt_ll_sheet_fragment_recom_child"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_reg_password_again"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_edt_reg_password_again"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/col_words_inactive_grey"
+                        android:textSize="@dimen/px32" />
+                    <ImageView
+                        android:id="@+id/iv_cancel_remark"
+                        android:layout_width="@dimen/width_iv_cancel_man_recommended"
+                        android:layout_height="@dimen/height_iv_cancel_man_recommended"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_ten"
+                        android:background="@drawable/btn_del"
+                        android:contentDescription="@null"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_reg_immediate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_btn_recommend_immediate_fragment_recom_recommend"
+                android:layout_below="@id/ll_sheet"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_marginRight="@dimen/dp_five"
+                android:layout_marginTop="@dimen/dp_thirty"
+                android:background="@drawable/shape_btn_reg_login"
+                android:text="@string/btn_mechanism_ok"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/px36" />
+            <TextView
+                android:id="@+id/txt_echanism_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_reg_immediate"
+                android:layout_marginTop="@dimen/dp_twenty"
+                android:lineSpacingMultiplier="1.4"
+                android:paddingBottom="@dimen/dp_ten"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingRight="@dimen/dp_five"
+                android:text="@string/txt_mechanism_explain"
+                android:textColor="@color/col_words_inactive"
+                android:textSize="@dimen/px24" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

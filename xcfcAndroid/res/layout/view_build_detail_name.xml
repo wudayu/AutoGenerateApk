@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_five"
+    android:layout_marginRight="@dimen/dp_five"
+    android:layout_marginTop="@dimen/dp_eight"
+    android:background="@color/col_words_active_white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_houses_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_name_section_layout_recommend_houses"
+        android:layout_marginTop="@dimen/dp_ten"
+        android:paddingLeft="@dimen/dp_ten"
+        android:paddingRight="@dimen/dp_ten" >
+        <TextView
+            android:id="@+id/txt_name_houses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/px36" />
+        <TextView
+            android:id="@+id/txt_section_houses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:layout_toRightOf="@id/txt_name_houses"
+            android:textSize="@dimen/px28" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_houses_synopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_houses_name"
+        android:layout_marginTop="@dimen/dp_five"
+        android:paddingLeft="@dimen/dp_ten"
+        android:paddingRight="@dimen/dp_ten" >
+        <TextView
+            android:id="@+id/txt_houses_synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/col_text_build_appoint_recommend"
+            android:textSize="@dimen/px26" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_privilege_layout_recommend_houses"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_rl_privilege_layout_recommend_houses"
+        android:layout_below="@id/rl_houses_synopsis"
+        android:layout_marginTop="@dimen/dp_five"
+        android:paddingLeft="@dimen/dp_ten"
+        android:paddingRight="@dimen/dp_ten" >
+        <ImageView
+            android:id="@+id/iv_privilege_recommend_houses"
+            android:layout_width="@dimen/side_iv_privilege_recommend_houses"
+            android:layout_height="@dimen/side_iv_privilege_recommend_houses"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ico_hui"
+            android:contentDescription="@null" />
+        <TextView
+            android:id="@+id/txt_privilege_houses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_five"
+            android:layout_toRightOf="@id/iv_privilege_recommend_houses"
+            android:maxWidth="@dimen/width_txt_privilege_layout_recommend_houses"
+            android:singleLine="true"
+            android:textColor="@color/letter_main_red"
+            android:textSize="@dimen/px28" />
+        <com.movitech.grande.views.AutoScaleTextView
+            android:id="@+id/txt_price_houses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxWidth="@dimen/dp_hundred_twenty"
+            android:singleLine="true"
+            android:textColor="@color/col_text_recommend_yellow"
+            android:textSize="@dimen/px26" />
+        <!-- android:text="@string/hint_average_price" -->
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/txt_price_houses"
+            android:textColor="@color/col_text_recommend_yellow"
+            android:textSize="@dimen/px26" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view_puppet"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/rl_privilege_layout_recommend_houses"
+        android:layout_marginBottom="@dimen/dp_five"
+        android:layout_marginLeft="@dimen/dp_ten"
+        android:layout_marginRight="@dimen/dp_ten"
+        android:layout_marginTop="@dimen/dp_ten"
+        android:background="@color/letter_grey_deep_13" />
+    <LinearLayout
+        android:id="@+id/ll_recommend_appointemnt"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_fifty"
+        android:layout_below="@+id/view_puppet"
+        android:background="@color/col_words_active_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/rl_top_left"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/letter_grey_deep_full"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/iv_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ico_remok"
+                android:contentDescription="@null" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/txt_recommend_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/col_text_build_yellow"
+                    android:textSize="@dimen/px24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_recommend_succeed"
+                    android:textColor="@color/col_text_build_appoint_recommend"
+                    android:textSize="@dimen/px24" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/dp_one"
+            android:layout_height="@dimen/dp_forty"
+            android:background="@color/border_line" />
+        <LinearLayout
+            android:id="@+id/rl_top_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/letter_grey_deep_full"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/iv_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ico_appointment"
+                android:contentDescription="@null" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/txt_appointment_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/col_text_build_yellow"
+                    android:textSize="@dimen/px24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_appointment_succeed"
+                    android:textColor="@color/col_text_build_appoint_recommend"
+                    android:textSize="@dimen/px24" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/v_re_xline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_six"
+        android:layout_below="@id/ll_recommend_appointemnt"
+        android:background="@drawable/repeat_build_name_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_twentyfive"
+        android:layout_below="@id/v_re_xline"
+        android:layout_marginTop="@dimen/dp_minus_two"
+        android:background="#FFFAFAFA"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/txt_discount_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:text="@string/txt_discount_time"
+            android:textColor="@color/letter_grey_deep_9"
+            android:textSize="@dimen/px24" />
+        <TextView
+            android:id="@+id/txt_privilege_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:textColor="@color/letter_grey_deep_9"
+            android:textSize="@dimen/px24" />
+    </LinearLayout>
+</RelativeLayout>

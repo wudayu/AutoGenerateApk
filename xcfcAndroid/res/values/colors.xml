@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 常用 -->
+    <color name="main_bg">#FFF0F0F0</color>
+    <color name="main_app">#FFF4F4F4</color>
+    <color name="border_line">#FFD5D5D5</color>
+    <color name="earn_score_yline">#FFE6E6E6</color>
+    <color name="txt_color_black">#FF000000</color>
+    <color name="transparent_black_30_100">#4C000000</color>
+    <color name="transparent_black_50_100">#7F000000</color>
+    <color name="transparent_black_60_100">#96000000</color>
+    <color name="transparent_black_80_100">#C8000000</color>
+    <color name="transparent_white_60_100">#9DFFFFFF</color>
+    <color name="transparent_white_80_100">#C8FFFFFF</color>
+    <color name="letter_grey_deep_3">#FF333333</color>
+    <color name="letter_grey_deep_4">#FF4D4D4D</color>
+    <color name="letter_grey_deep_6">#FF666666</color>
+    <color name="letter_grey_deep_8">#FF808080</color>
+    <color name="letter_grey_deep_9">#FF999999</color>
+    <color name="letter_grey_deep_10">#FFA0A0A0</color>
+    <color name="letter_grey_deep_12">#FFB2B2B2</color>
+    <color name="letter_grey_deep_13">#FFCCCCCC</color>
+    <color name="letter_grey_deep_14">#FFD5D5D5</color>
+    <color name="letter_grey_deep_15">#FFE6E6E6</color>
+    <color name="letter_grey_deep_16">#FFF0F0F0</color>
+    <color name="letter_grey_deep_full">#FFFFFFFF</color>
+    <color name="letter_green_deep_light">#FFE4FFE8</color>
+    <color name="letter_green_deep_standard">#FF1BBA15</color>
+    <color name="letter_green_deep_dark">#FF00C714</color>
+    <color name="letter_green_deep_darker">#FF009203</color>
+    <color name="letter_orange_deep_standard">#FFED5C09</color>
+    <color name="letter_red_deep_standard">#FFFD4300</color>
+    <color name="letter_red_deep">#FFFF0000</color>
+    <color name="letter_red_deep_lighter">#FFFF9B67</color>
+    <color name="letter_orange_deep_lighter">#FFFF5712</color>
+    <color name="main_app_bar">#FFCE0209</color>
+    <color name="letter_main_red">#FFE70009</color>
+    <color name="letter_cancle">#FF93661B</color>
+    
+    <color name="letter_recom_left_bg">#FFFFF4E9</color>
+    <!-- 全局 -->
+    <color name="col_words_active">#FF59BB2D</color>
+    <color name="col_words_active_white">#FFFFFFFF</color>
+    <color name="col_words_inactive">#FF999999</color>
+    <color name="col_words_service_terms">#FFD94600</color>
+    <color name="col_words_inactive_grey">#DDBBBBBB</color>
+    <color name="col_words_inactive_green">#DD007D17</color>
+    <color name="col_ll_bottom">#FFF6F6F6</color>
+    <color name="col_ll_bottom_border">#FFD3D3D3</color>
+    <!--
+    <color name="col_circle_indicator_page">#FFCFEFD5</color>
+    <color name="col_circle_indicator_fill">#FF00C714</color>
+    -->
+    <color name="col_circle_indicator_page">#FFD5ECD5</color>
+    <color name="col_circle_indicator_fill">#FFFFFFFF</color>
+    <color name="col_gradient_bottom">#FFEBEBEB</color>
+    <color name="col_gradient_stroke">#FFC3C3C3</color>
+    <color name="col_line_viewpager">#FF4BA933</color>
+    
+    <color name="grande_col_line_viewpager">#FFDE5A63</color>
+    <!-- 楼盘页面 -->
+    <color name="col_search_frame">#FF029F1C</color>
+    <color name="col_ll_earn_buttons">#FFF4F3F1</color>
+    <color name="col_shadow_start">#FFEAEAEA</color>
+    <color name="col_txt_earn_score">#FFCB5D19</color>
+    <color name="col_txt_earn_commission">#FF089802</color>
+    <color name="col_txt_privilege">#FFED5C09</color>
+    <color name="col_rl_speciality_first">#FFC7C7C7</color>
+    <color name="col_rl_search_bg">#FFE4FFE8</color>
+    <color name="col_iv_message_circle">#FF069700</color>
+    <color name="col_iv_meeeage_circle_yellow">#FFFFDA99</color>
+    <color name="col_show_other">#FFA3CAA6</color>
+    <color name="col_build_phone">#FF484848</color>
+    <!-- 楼盘详细 -->
+    <color name="col_btn_recommend_immediately">#FFFF5712</color>
+    <color name="col_btn_recommend">#FFFF2F02</color>
+    <color name="col_btn_appointment">#FF00C714</color>
+    <color name="col_text_block_green">#FFBBE5C6</color>
+    <color name="col_text_block_low_green">#FFE6F1E8</color>
+    <color name="col_text_build_small_title_green">#FF3EB134</color>
+    <color name="col_text_build_synopsis">#FF4C4C4C</color>
+    <color name="col_text_build_appoint_recommend">#FF8D8D8D</color>
+    <color name="col_text_recommend_yellow">#FFFE8E11</color>
+    <color name="col_text_appoint_blue">#FF329FE6</color>
+    <color name="col_text_build_yellow">#FFFC672D</color>
+    <color name="col_text_recommend_yellow_outter">#FFFED792</color>
+   
+    <!-- 注册页面 -->
+    <color name="col_text_note_bg">#FFE6E6E6</color>
+    
+    <!-- 资讯页面 -->
+    <color name="col_info_indicator">#FF00FE83</color>
+    <color name="col_txt_back_alpha">#9F000000</color>
+    <!-- 我的页面 -->
+    <color name="col_hint_text">#FFB2B2B2</color>
+    <color name="col_txt_commission_total">#FFFD5C32</color>
+    <color name="col_dash">#FFDADBDD</color>
+    <color name="col_commission_block">#FF99D393</color>
+    <color name="col_dark_green_letters">#FF2B9F4C</color>
+    <color name="col_txt_hint_my_score">#FF333333</color>
+    <color name="col_txt_my_score">#FF999999</color>
+    <color name="col_small_circle_fragment_mine">#FF67FFA8</color>
+    <color name="col_small_circle_inner_fragment_mine">#FF00C714</color>
+    <color name="col_big_circle_fragment_mine">#FFFF9B67</color>
+    <color name="col_big_circle_inner_fragment_mine">#FFFF2F02</color>
+    <color name="shape_customer_avater_bg_color">#FF3FC5D0</color>
+    <color name="shape_customer_avater_green_bg_color">#FF32CD32</color>
+    <color name="shape_customer_avater_blue_bg_color">#FF4876FF</color>
+    <color name="shape_customer_avater_orange_bg_color">#FFFF8C00</color>
+    <color name="shape_customer_avater_purple_bg_color">#FFD15FEE</color>
+    <color name="shape_customer_avater_red_bg_color">#FFEE6A50</color>
+    <color name="shape_mycommission_list_green_bg_color">#FF1BBA15</color>
+    <color name="col_total_integral_bg_inner">#FF02E162</color>
+    <color name="col_total_integral_bg_outer">#FFBBFECA</color>
+    
+    <color name="col_customer_detail_circle_fill">#FFCE0209</color>
+    
+    
+    <color name="grande_col_small_circle_fragment_mine">#FF67FFA8</color>
+    <!-- 赚积分页面 -->
+    <color name="col_earn_total_integral_inner">#FF66D562</color>
+    <color name="col_earn_total_integral_outer">#FFD0FDD0</color>
+    <color name="col_earn_item_intergral">#FFFF5712</color>
+    <color name="col_earn_already_succeed">#FFCCCCCC</color>
+    <color name="col_shape_item_stroke">#FFE6E6E6</color>
+    <color name="col_shape_item_bottom">#FFEBEBEB</color>
+    <!-- city choose -->
+    <color name="col_city_shanghai">#FF3DCE6F</color>
+    <color name="col_city_changzhou">#FF00A162</color>
+    <color name="col_city_nanjing">#FFFFFFFF</color>
+    <color name="col_city_suzhou">#FFFFFFFF</color>
+    <color name="col_city_kunshan">#FF3DCE6F</color>
+    <color name="col_city_wuxi">#FF00A162</color>
+    <color name="col_city_hangzhou">#FF068870</color>
+    <color name="col_city_nantong">#FF00A162</color>
+    <color name="col_city_wuhan">#FFFFFFFF</color>
+    <color name="col_city_more">#FFCCCCCC</color>
+    <color name="col_city_more_txt">#FF7F7E7E</color>
+    <color name="col_city_item_bg">#FFFAFAFA</color>
+    <color name="col_city_bg">#FFFFFFFF</color>
+    <!-- 我的团队 -->
+    <color name="col_mine_team_username">#FF078802</color>
+    <color name="col_mine_team_wait_commissiom">#FF666666</color>
+    <color name="col_mine_team_recom">#FFEB5C32</color>
+    <color name="col_mine_team_line">#FFE6E6E6</color>
+    <color name="col_mine_team_off">#FFFFFFFF</color>
+    <color name="col_mine_team_on">#FFF0F0F0</color>
+    <!-- 子机构 -->
+    <color name="col_nstitution_on_txt">#FF70DB64</color>
+    <color name="col_nstitution_off_txt">#FFA6A6A6</color>
+    <color name="col_nstitution_name">#FFFD662E</color>
+    <color name="col_nstitution_user_name">#FF1CBB14</color>
+</resources>

@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="@color/col_total_integral_bg_outer" />
+            <size
+                android:height="@dimen/dp_fifty"
+                android:width="@dimen/dp_fifty" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/dp_two"
+        android:left="@dimen/dp_two"
+        android:right="@dimen/dp_two"
+        android:top="@dimen/dp_two">
+        <shape android:shape="oval" >
+            <solid android:color="@color/col_total_integral_bg_inner" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.movitech.grande.haerbin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_app"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ll_top_fragment_houses"
+        android:background="@color/main_app_bar" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_customer_detail"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px40" />
+        <ImageView
+            android:id="@+id/iv_back_customer"
+            android:layout_width="@dimen/width_top_icon_houses_detail"
+            android:layout_height="@dimen/height_top_icon_houses_detail"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+    <com.movitech.grande.views.BaseViewPager
+        android:id="@+id/vp_fragment_customer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <com.movitech.grande.views.CirclePageIndicator
+        android:id="@+id/circle_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_ten"
+        app:fillColor="@color/col_customer_detail_circle_fill"
+        app:pageColor="@color/col_words_active_white"
+        app:strokeColor="@color/col_customer_detail_circle_fill" />
+</LinearLayout>

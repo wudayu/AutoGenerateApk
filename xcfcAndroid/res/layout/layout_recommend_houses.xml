@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="@dimen/width_layout_recommend_houses_external"
+        android:layout_height="@dimen/height_layout_recommend_houses_external" >
+        <RelativeLayout
+            android:layout_width="@dimen/width_layout_recommend_houses"
+            android:layout_height="@dimen/height_layout_recommend_houses"
+            android:background="@drawable/shape_radius_corner_white_frame"
+            android:padding="@dimen/padding_inner_layout_recommend_houses_fragment_houses" >
+            <ImageView
+                android:id="@+id/iv_layout_recommend_houses"
+                android:layout_width="@dimen/width_iv_layout_recommend_houses"
+                android:layout_height="@dimen/height_iv_layout_recommend_houses"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rl_name_section_layout_recommend_houses"
+                android:layout_alignBottom="@id/iv_layout_recommend_houses"
+                android:background="@color/transparent_black_80_100"
+                android:paddingLeft="@dimen/dp_five" >
+                <TextView
+                    android:id="@+id/txt_name_layout_recommend_houses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="12"
+                    android:maxWidth="@dimen/width_txt_name_layout_recommend_houses"
+                    android:singleLine="true"
+                    android:text="新城金郡"
+                    android:textColor="@color/letter_grey_deep_full"
+                    android:textSize="@dimen/px24" />
+                <TextView
+                    android:id="@+id/txt_section_layout_recommend_houses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_five"
+                    android:layout_toRightOf="@id/txt_name_layout_recommend_houses"
+                    android:gravity="right"
+                    android:text="[嘉定区]"
+                    android:textColor="@color/letter_grey_deep_full"
+                    android:textSize="@dimen/px20" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_privilege_layout_recommend_houses"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_rl_privilege_layout_recommend_houses"
+                android:layout_below="@id/iv_layout_recommend_houses" >
+                <ImageView
+                    android:id="@+id/iv_privilege_recommend_houses"
+                    android:layout_width="@dimen/side_iv_privilege_recommend_houses"
+                    android:layout_height="@dimen/side_iv_privilege_recommend_houses"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ico_hui"
+                    android:contentDescription="@null" />
+                <TextView
+                    android:id="@+id/txt_privilege_layout_recommend_houses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_five"
+                    android:layout_toRightOf="@id/iv_privilege_recommend_houses"
+                    android:maxLength="10"
+                    android:maxWidth="@dimen/width_max_txt_privilege_layout_recommend_houses"
+                    android:singleLine="true"
+                    android:text="1万享3万"
+                    android:textColor="@color/main_app_bar"
+                    android:textSize="@dimen/px24" />
+                <TextView
+                    android:id="@+id/txt_area_layout_recommend_houses"
+                    android:layout_width="@dimen/dp_sixty"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_two"
+                    android:ellipsize="end"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:text="16800/㎡"
+                    android:textColor="@color/col_text_recommend_yellow"
+                    android:textSize="@dimen/px28" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_detail_layout_recommend_houses"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_rl_detail_layout_recommend_houses"
+                android:layout_below="@id/rl_privilege_layout_recommend_houses" >
+                <TextView
+                    android:id="@+id/txt_detail_layout_recommend_houses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:text="360C 新都市国际社区"
+                    android:textSize="@dimen/px22" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_speciality_layout_recommend_houses"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_rl_speciality_layout_recommend_houses"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_two" >
+                <RelativeLayout
+                    android:id="@+id/rl_speciality_first_layout_recommend_houses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_rl_speciality_first_layout_recommend_houses"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_radius_corner_green_bg"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingRight="@dimen/dp_five"
+                    android:visibility="gone" >
+                    <TextView
+                        android:id="@+id/txt_speciality_first_layout_recommend_houses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:maxWidth="@dimen/dp_sixty"
+                        android:singleLine="true"
+                        android:text="花园洋房"
+                        android:textColor="@color/letter_grey_deep_full"
+                        android:textSize="@dimen/px20"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_speciality_second_layout_recommend_houses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_rl_speciality_second_layout_recommend_houses"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/padding_inner_layout_recommend_houses_fragment_houses"
+                    android:layout_toRightOf="@id/rl_speciality_first_layout_recommend_houses"
+                    android:background="@drawable/shape_radius_corner_green_bg"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingRight="@dimen/dp_five"
+                    android:visibility="gone" >
+                    <TextView
+                        android:id="@+id/txt_speciality_second_layout_recommend_houses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:maxWidth="@dimen/dp_sixty"
+                        android:singleLine="true"
+                        android:text="商业综合体"
+                        android:textColor="@color/letter_grey_deep_full"
+                        android:textSize="@dimen/px20"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_speciality_third_layout_recommend_houses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_rl_speciality_second_layout_recommend_houses"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/padding_inner_layout_recommend_houses_fragment_houses"
+                    android:layout_toRightOf="@id/rl_speciality_second_layout_recommend_houses"
+                    android:background="@drawable/shape_radius_corner_green_bg"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingRight="@dimen/dp_five"
+                    android:visibility="gone" >
+                    <TextView
+                        android:id="@+id/txt_speciality_third_layout_recommend_houses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:maxWidth="@dimen/dp_sixty"
+                        android:singleLine="true"
+                        android:text="商业综合体"
+                        android:textColor="@color/letter_grey_deep_full"
+                        android:textSize="@dimen/px20"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="@dimen/side_iv_recommand_recommand_houses"
+            android:layout_height="@dimen/side_iv_recommand_recommand_houses"
+            android:background="@drawable/ico_jian"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+</RelativeLayout>

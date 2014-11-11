@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_app"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ll_top_fragment_houses"
+        android:background="@drawable/toptit_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_mine_team_tag"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px40" />
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/width_top_icon_houses_detail"
+            android:layout_height="@dimen/height_top_icon_houses_detail"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:background="@drawable/btn_back"
+            android:contentDescription="@null" />
+        <ImageView
+            android:id="@+id/iv_add_client"
+            android:layout_width="@dimen/width_top_icon_houses_detail"
+            android:layout_height="@dimen/height_top_icon_houses_detail"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_twelve"
+            android:background="@drawable/add_institution"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+    <com.movitech.grande.views.LoadDataListView
+        android:id="@+id/lv_team"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent" >
+    </com.movitech.grande.views.LoadDataListView>
+</LinearLayout>

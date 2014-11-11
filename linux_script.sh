@@ -1,10 +1,11 @@
-echo ''
-
 # 定义替换标志字符串
 SYMBOL=wwwuuudddaaayyyuuu;
 # 定义原工程的名称
-ORIGIN_PROJECT=testfloder;
+ORIGIN_PROJECT=xcfcAndroid;
 
+
+
+echo ''
 # 获取配置文件行数也就是城市数目
 lines=`awk 'END{print NR}' config_file`;
 # 获取配置文件列数也就是参数数目

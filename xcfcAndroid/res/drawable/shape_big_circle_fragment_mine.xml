@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval" >
+            <solid android:color="@color/col_big_circle_fragment_mine" />
+            <size
+                android:height="@dimen/side_big_circle_fragment_mine"
+                android:width="@dimen/side_big_circle_fragment_mine" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/dp_two"
+        android:left="@dimen/dp_two"
+        android:right="@dimen/dp_two"
+        android:top="@dimen/dp_two">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval" >
+            <solid android:color="@color/col_big_circle_inner_fragment_mine" />
+            <size
+                android:height="@dimen/side_big_circle_inner_fragment_mine"
+                android:width="@dimen/side_big_circle_inner_fragment_mine" />
+        </shape>
+    </item>
+</layer-list>

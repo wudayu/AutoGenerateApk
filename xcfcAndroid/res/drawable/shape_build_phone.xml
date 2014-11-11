@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="@color/main_app_bar" />
+            <size
+                android:height="@dimen/dp_fifty"
+                android:width="@dimen/dp_fifty" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+    <RelativeLayout
+        android:id="@+id/rl_houses_detail_block"
+        android:layout_width="@dimen/width_rl_houses_detail_block"
+        android:layout_height="@dimen/height_rl_houses_detail_block"
+        android:layout_alignBottom="@id/iv_background"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/dp_forty_five"
+        android:background="@color/transparent_white_80_100"
+        android:padding="@dimen/dp_ten"
+        android:visibility="visible" >
+        <LinearLayout
+            android:id="@+id/ll_rmb_commmission"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_ll_rmb_commmission"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/hint_money"
+                android:textColor="@color/letter_grey_deep_6"
+                android:textSize="@dimen/px28" />
+            <TextView
+                android:id="@+id/txt_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="3000"
+                android:textColor="@color/letter_orange_deep_standard"
+                android:textSize="@dimen/px36" />
+            <ImageView
+                android:layout_width="@dimen/dp_fifteen"
+                android:layout_height="@dimen/dp_fifteen"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_three"
+                android:background="@drawable/ico_yong"
+                android:contentDescription="@null" />
+            <Button
+                android:id="@+id/btn_recommend_immediately"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_twenty"
+                android:background="@color/col_btn_recommend"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingRight="@dimen/dp_five"
+                android:text="@string/btn_recommend_immediately"
+                android:textColor="@color/letter_grey_deep_full"
+                android:textSize="@dimen/px32" />
+            <Button
+                android:id="@+id/btn_house_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:background="@color/col_btn_appointment"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingRight="@dimen/dp_five"
+                android:text="@string/btn_house_appointment"
+                android:textColor="@color/letter_grey_deep_full"
+                android:textSize="@dimen/px32" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_houses_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rl_name_section_layout_recommend_houses"
+            android:layout_below="@id/ll_rmb_commmission" >
+            <TextView
+                android:id="@+id/txt_name_layout_recommend_houses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="新城金郡"
+                android:textColor="@color/letter_green_deep_standard"
+                android:textSize="@dimen/px36" />
+            <TextView
+                android:id="@+id/txt_section_layout_recommend_houses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:layout_toRightOf="@id/txt_name_layout_recommend_houses"
+                android:text="[嘉定区]"
+                android:textColor="@color/letter_green_deep_standard"
+                android:textSize="@dimen/px20" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_privilege_layout_recommend_houses"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_rl_privilege_layout_recommend_houses"
+            android:layout_below="@id/rl_houses_name" >
+            <ImageView
+                android:id="@+id/iv_privilege_recommend_houses"
+                android:layout_width="@dimen/side_iv_privilege_recommend_houses"
+                android:layout_height="@dimen/side_iv_privilege_recommend_houses"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_hui"
+                android:contentDescription="@null" />
+            <TextView
+                android:id="@+id/txt_privilege_layout_recommend_houses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_toRightOf="@id/iv_privilege_recommend_houses"
+                android:maxWidth="@dimen/width_txt_privilege_layout_recommend_houses"
+                android:singleLine="true"
+                android:text="1万享3万"
+                android:textColor="@color/letter_orange_deep_standard"
+                android:textSize="@dimen/px28" />
+            <com.movitech.grande.views.AutoScaleTextView
+                android:id="@+id/txt_area_layout_recommend_houses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:maxWidth="@dimen/dp_hundred_twenty"
+                android:singleLine="true"
+                android:text="16800/㎡"
+                android:textColor="@color/letter_green_deep_standard"
+                android:textSize="@dimen/px36" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/txt_area_layout_recommend_houses"
+                android:text="@string/hint_average_price"
+                android:textColor="@color/letter_green_deep_standard"
+                android:textSize="@dimen/px28" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/view_puppet"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/rl_privilege_layout_recommend_houses"
+            android:layout_marginBottom="@dimen/dp_five"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:background="@color/letter_grey_deep_13" />
+        <RelativeLayout
+            android:id="@+id/rl_more_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_puppet" >
+            <TextView
+                android:id="@+id/txt_time_to_over"
+                android:layout_width="@dimen/width_txt_time_to_over"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="256天6小时37分\n距优惠结束时间"
+                android:textColor="@color/letter_grey_deep_6"
+                android:textSize="@dimen/px28" />
+            <TextView
+                android:id="@+id/txt_times_recommended"
+                android:layout_width="@dimen/width_txt_times_recommended"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_twenty"
+                android:layout_toRightOf="@id/txt_time_to_over"
+                android:text="15次\n成功推荐"
+                android:textColor="@color/letter_grey_deep_6"
+                android:textSize="@dimen/px28" />
+            <TextView
+                android:id="@+id/txt_people_appointed"
+                android:layout_width="@dimen/width_txt_people_appointed"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="9人\n已预约"
+                android:textColor="@color/letter_grey_deep_6"
+                android:textSize="@dimen/px28" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

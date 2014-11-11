@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_relation_commission"
+        android:layout_marginLeft="@dimen/dp_ten"
+        android:layout_marginRight="@dimen/dp_ten"
+        android:layout_marginTop="@dimen/dp_five"
+        android:background="@drawable/shape_search_build_imageview" >
+        <RelativeLayout
+            android:id="@+id/rl_check"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_relation_commission"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_fifteen"
+            android:layout_marginTop="@dimen/dp_five"
+            android:gravity="center" >
+            <CheckBox
+                android:id="@+id/cb_check"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_relation_commission"
+            android:layout_marginLeft="@dimen/dp_fifteen"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_toRightOf="@+id/rl_check"
+            android:gravity="center_vertical" >
+            <RelativeLayout
+                android:id="@+id/rl_image"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_relation_commission"
+                android:layout_centerVertical="true"
+                android:gravity="center" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_ico_list_bg"
+                    android:gravity="center" >
+                    <ImageView
+                        android:id="@+id/iv_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ico_list" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_relation_commission"
+                android:layout_marginLeft="@dimen/dp_twelve"
+                android:layout_marginRight="@dimen/dp_fifteen"
+                android:layout_toRightOf="@+id/rl_image"
+                android:gravity="center_vertical" >
+                <TextView
+                    android:id="@+id/tv_recommend_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐成功"
+                    android:textColor="@color/letter_grey_deep_6"
+                    android:textSize="@dimen/px30" />
+                <TextView
+                    android:id="@+id/tv_recommend_client_name"
+                    android:layout_width="@dimen/width_tv_commission_client"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_recommend_ok"
+                    android:layout_below="@+id/tv_recommend_ok"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:text="(赵强-新城上上城)"
+                    android:textColor="@color/letter_grey_deep_6"
+                    android:textSize="@dimen/px30" />
+                <TextView
+                    android:id="@+id/tv_commision_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_ten"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="+500"
+                    android:textColor="@color/col_text_recommend_yellow"
+                    android:textSize="@dimen/px30" />
+                <TextView
+                    android:id="@+id/tv_apply_date_can_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_recommend_client_name"
+                    android:layout_below="@+id/tv_recommend_client_name"
+                    android:layout_toRightOf="@+id/tv_apply_date_no_edit"
+                    android:text="2014-06-19"
+                    android:textColor="#FFB2B2B2"
+                    android:textSize="@dimen/px22" >
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

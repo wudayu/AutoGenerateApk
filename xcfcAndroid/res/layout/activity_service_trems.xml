@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_app" >
+    <!-- 顶端导航 -->
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ll_top_fragment_houses"
+        android:background="@color/main_app_bar" >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/width_top_icon_houses_detail"
+            android:layout_height="@dimen/height_top_icon_houses_detail"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:background="@drawable/btn_back"
+            android:contentDescription="@null" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_service_terms"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px40" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top" >
+        <TextView
+            android:id="@+id/tv_service_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TextView>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_app" >
+    <!-- 顶端提示大块 -->
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ll_top_fragment_houses"
+        android:background="@color/main_app_bar" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_tag_commission"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px40" />
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/width_top_icon_houses_detail"
+            android:layout_height="@dimen/height_top_icon_houses_detail"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:background="@drawable/btn_back"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_indicate_words"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ll_indicate_words_fragment_info"
+        android:layout_below="@id/rl_top"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+        <RelativeLayout
+            android:id="@+id/rl_commission_wait"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/txt_commission_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/txt_tag_commission_wait"
+                android:textColor="@color/letter_main_red"
+                android:textSize="@dimen/px32" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_commission_grant"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/txt_commission_grant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/txt_tag_commission_grant"
+                android:textColor="@color/col_words_inactive"
+                android:textSize="@dimen/px32" />
+            <RelativeLayout
+                android:id="@+id/rl_unread_houses_activities"
+                android:layout_width="@dimen/side_rl_message_hint_fragment_houses"
+                android:layout_height="@dimen/side_rl_message_hint_fragment_houses"
+                android:layout_alignRight="@id/txt_commission_grant"
+                android:layout_alignTop="@id/txt_commission_grant"
+                android:layout_marginRight="@dimen/margin_right_rl_unread_houses_activities"
+                android:layout_marginTop="@dimen/margin_top_rl_unread_houses_activities"
+                android:background="@drawable/ico_mynewsnum"
+                android:visibility="gone" >
+                <TextView
+                    android:id="@+id/txt_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:includeFontPadding="false"
+                    android:text="5"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/px20" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_commission_ok"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/txt_commission_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/txt_tag_commission_ok"
+                android:textColor="@color/col_words_inactive"
+                android:textSize="@dimen/px32" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.movitech.grande.views.UnderlinePageIndicator
+        android:id="@+id/indicator_fragment_commission"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_indicator_fragment_info"
+        android:layout_below="@id/ll_indicate_words"
+        android:background="@color/letter_grey_deep_15" />
+    <com.movitech.grande.views.BaseViewPager
+        android:id="@+id/vp_fragment_commission"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/indicator_fragment_commission" />
+</RelativeLayout>

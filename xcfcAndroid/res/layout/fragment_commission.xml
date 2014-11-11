@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_commission_count"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_tv_commission_mycommission"
+        android:gravity="center_vertical" >
+        <TextView
+            android:id="@+id/tv_commission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:textColor="#FFB0B0B0"
+            android:textSize="@dimen/px26" >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_commission_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_five"
+            android:layout_toRightOf="@+id/tv_commission"
+            android:textColor="@color/letter_main_red"
+            android:textSize="@dimen/px24" >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_commission_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_commission_count"
+            android:text="@string/txt_my_commission_wait_apply_total_unit"
+            android:textColor="#FFB0B0B0"
+            android:textSize="@dimen/px24"
+            android:visibility="gone" >
+        </TextView>
+    </RelativeLayout>
+    <com.movitech.grande.views.LoadDataListView
+        android:id="@+id/lv_commission"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/main_app"
+        android:dividerHeight="@dimen/dp_two"
+        android:listSelector="@android:color/transparent" />
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_sixty_five"
+        android:background="@color/border_line"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone" >
+        <RelativeLayout
+            android:id="@+id/rl_check"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_relation_commission"
+            android:layout_marginLeft="@dimen/dp_twenty"
+            android:gravity="center_vertical" >
+            <CheckBox
+                android:id="@+id/cb_check"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" >
+            </CheckBox>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_toRightOf="@id/cb_check"
+                android:text="@string/txt_all_selected" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_relation_commission"
+            android:layout_toRightOf="@+id/rl_check" >
+            <TextView
+                android:id="@+id/tv_apply_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:textSize="@dimen/px32" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ll_bottom_btn"
+            android:layout_width="@dimen/height_rl_search_house"
+            android:layout_height="@dimen/dp_sixty_five"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_ten"
+            android:background="@color/border_line"
+            android:gravity="center_vertical" >
+            <Button
+                android:id="@+id/btn_click_apply"
+                android:layout_width="@dimen/height_rl_search_house"
+                android:layout_height="@dimen/height_btn_commission_mycommission"
+                android:background="@drawable/shape_apply_bg"
+                android:gravity="center"
+                android:text="@string/my_commission_apply_string"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/px36" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

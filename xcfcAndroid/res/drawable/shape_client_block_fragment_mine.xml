@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <stroke
+                android:dashGap="@dimen/dp_one"
+                android:dashWidth="@dimen/dp_three"
+                android:width="@dimen/dp_one"
+                android:color="@color/col_dash" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item android:right="@dimen/dp_one">
+        <shape>
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+</layer-list>

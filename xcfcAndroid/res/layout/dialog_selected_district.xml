@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/col_words_active_white" >
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/col_words_active_white"
+        android:visibility="gone" >
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_sv_top_activity_my_customer"
+            android:gravity="center_vertical" >
+            <TextView
+                android:id="@+id/tv_no_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_fifteen"
+                android:text="不限"
+                android:textColor="@color/letter_grey_deep_6"
+                android:textSize="@dimen/px30" >
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_sv_top_activity_my_customer"
+            android:gravity="center_vertical" >
+            <ImageView
+                android:id="@+id/iv_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_ten"
+                android:contentDescription="null"
+                android:src="@drawable/qu_ico_ok"
+                android:visibility="gone" >
+            </ImageView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.movitech.grande.views.MaxHeightListView
+        android:id="@+id/lv_select_district"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top" >
+    </com.movitech.grande.views.MaxHeightListView>
+</RelativeLayout>

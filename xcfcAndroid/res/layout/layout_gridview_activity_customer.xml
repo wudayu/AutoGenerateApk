@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_customer_count"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_twentyeight"
+        android:background="@android:color/white"
+        android:gravity="center_vertical" >
+        <TextView
+            android:id="@+id/tv_customer_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:gravity="center_vertical"
+            android:textColor="@color/col_hint_text"
+            android:textSize="@dimen/px30" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_two"
+        android:background="@color/letter_grey_deep_14" />
+    <com.movitech.grande.views.LoadDataGridView
+        android:id="@+id/gridview_customer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/dp_two"
+        android:cacheColorHint="@null"
+        android:columnWidth="@dimen/dp_sixty"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/dp_two"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dp_two" />
+</LinearLayout>

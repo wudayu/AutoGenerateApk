@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_customer_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/letter_grey_deep_full"
+        android:paddingBottom="@dimen/dp_five" >
+        <RelativeLayout
+            android:id="@+id/rl_customer_image"
+            android:layout_width="@dimen/dp_fifty"
+            android:layout_height="@dimen/dp_fifty"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:background="@drawable/shape_customer_avater_bg" >
+            <ImageView
+                android:id="@+id/iv_customer_avator"
+                android:layout_width="@dimen/dp_twentyfive"
+                android:layout_height="@dimen/dp_twentyfive"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ico_girl"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/dp_fifty"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/dp_five"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:layout_toRightOf="@+id/rl_customer_image"
+            android:textColor="#FF3FC5D0"
+            android:textSize="@dimen/px34" />
+        <TextView
+            android:id="@+id/tv_customer_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_customer_name"
+            android:layout_marginLeft="@dimen/dp_four"
+            android:layout_toRightOf="@+id/tv_customer_name"
+            android:textColor="#FF3FC5D0"
+            android:textSize="@dimen/px34" />
+        <RelativeLayout
+            android:id="@+id/btn_statu_ok"
+            android:layout_width="@dimen/dp_ninety"
+            android:layout_height="@dimen/dp_twentyfive"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_eight"
+            android:background="@drawable/statu_ok" >
+            <TextView
+                android:id="@+id/tv_statu_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_fifteen"
+                android:textColor="@color/letter_grey_deep_full"
+                android:textSize="@dimen/px24" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_recom_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_customer_name"
+            android:layout_below="@+id/tv_customer_name"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:text="@string/recomend_client_purchase"
+            android:textColor="#FF808080"
+            android:textSize="@dimen/px24" />
+        <TextView
+            android:id="@+id/tv_recom_build"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_recom_buy"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:layout_toRightOf="@+id/tv_recom_buy"
+            android:textColor="#FF808080"
+            android:textSize="@dimen/px24" />
+        <TextView
+            android:id="@+id/tv_average_commission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_recom_buy"
+            android:layout_below="@+id/tv_recom_buy"
+            android:layout_marginTop="@dimen/dp_two"
+            android:textColor="#FF808080"
+             android:text="@string/client_commission_money"
+            android:textSize="@dimen/px24" />
+        <TextView
+            android:id="@+id/tv_average_commission_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_average_commission"
+            android:layout_toRightOf="@+id/tv_average_commission"
+            android:textColor="#FF808080"
+            android:textSize="@dimen/px24" />
+        <TextView
+            android:id="@+id/tv_remain_validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_average_commission"
+            android:layout_below="@+id/tv_average_commission"
+            android:layout_marginTop="@dimen/dp_two"
+            android:text="剩余有效期："
+            android:textColor="#FF808080"
+            android:textSize="@dimen/px24" />
+        <TextView
+            android:id="@+id/tv_remain_validity_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_remain_validity"
+            android:layout_toRightOf="@+id/tv_remain_validity"
+            android:textColor="#FF808080"
+            android:textSize="@dimen/px24" />
+        <ImageView
+            android:id="@+id/iv_important_client"
+            android:layout_width="@dimen/dp_twentyeight"
+            android:layout_height="@dimen/dp_thirtytwo"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_statu_ok"
+            android:layout_marginRight="@dimen/dp_thirty"
+            android:layout_marginTop="@dimen/dp_twelve"
+            android:background="@drawable/ico_imcustomer_off"
+            android:contentDescription="@null" />
+        <TextView
+            android:id="@+id/tv_important_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_important_client"
+            android:layout_marginRight="@dimen/dp_eight"
+            android:text="@string/client_important_off"
+            android:textSize="@dimen/px24" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_six"
+        android:background="@drawable/repeat_bg" />
+    <TextView
+        android:id="@+id/tv_customer_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_twelve"
+        android:layout_marginTop="@dimen/dp_eight"
+        android:text="客户记录"
+        android:textColor="#FF808080"
+        android:textSize="@dimen/px26" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_twelve"
+            android:background="@drawable/timeline_yline" />
+        <ListView
+            android:id="@+id/lv_customer_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollingCache="false" >
+        </ListView>
+    </RelativeLayout>
+</LinearLayout>

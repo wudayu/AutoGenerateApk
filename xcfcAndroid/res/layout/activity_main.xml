@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ll_bottom_activity_main"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_ll_bottom_activity_main"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+        <RelativeLayout
+            android:id="@+id/rl_houses"
+            android:layout_width="@dimen/dp_insteadof_weight"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/iv_houses"
+                android:layout_width="@dimen/side_iv_small_group_activity_main"
+                android:layout_height="@dimen/side_iv_small_group_activity_main"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_iv_small_group_activity_main"
+                android:background="@drawable/menu_1"
+                android:contentDescription="@null" />
+            <TextView
+                android:id="@+id/txt_houses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_houses"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_houses_activity_main"
+                android:textColor="@color/letter_grey_deep_6" />
+            <ImageView
+                android:id="@+id/iv_houses_indicator"
+                android:layout_width="@dimen/side_iv_indicator_activity_main"
+                android:layout_height="@dimen/side_iv_indicator_activity_main"
+                android:layout_marginLeft="@dimen/margin_left_iv_indicator_activity_main"
+                android:layout_marginTop="@dimen/margin_top_iv_indicator_activity_main"
+                android:background="@drawable/ico_havenew"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_info"
+            android:layout_width="@dimen/dp_insteadof_weight"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/iv_info"
+                android:layout_width="@dimen/side_iv_small_group_activity_main"
+                android:layout_height="@dimen/side_iv_small_group_activity_main"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_iv_small_group_activity_main"
+                android:background="@drawable/menu_2"
+                android:contentDescription="@null" />
+            <TextView
+                android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_info"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_info_activity_main"
+                android:textColor="@color/letter_grey_deep_6" />
+            <ImageView
+                android:id="@+id/iv_info_indicator"
+                android:layout_width="@dimen/side_iv_indicator_activity_main"
+                android:layout_height="@dimen/side_iv_indicator_activity_main"
+                android:layout_marginLeft="@dimen/margin_left_iv_indicator_activity_main"
+                android:layout_marginTop="@dimen/margin_top_iv_indicator_activity_main"
+                android:background="@drawable/ico_havenew"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_recom"
+            android:layout_width="@dimen/dp_insteadof_weight"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/iv_recom"
+                android:layout_width="@dimen/side_iv_small_group_activity_main"
+                android:layout_height="@dimen/side_iv_small_group_activity_main"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_iv_small_group_activity_main"
+                android:background="@drawable/menu_3"
+                android:contentDescription="@null" />
+            <TextView
+                android:id="@+id/txt_recom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_recom"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_recom_activity_main"
+                android:textColor="@color/letter_grey_deep_6" />
+            <ImageView
+                android:id="@+id/iv_recom_indicator"
+                android:layout_width="@dimen/side_iv_indicator_activity_main"
+                android:layout_height="@dimen/side_iv_indicator_activity_main"
+                android:layout_marginLeft="@dimen/margin_left_iv_indicator_activity_main"
+                android:layout_marginTop="@dimen/margin_top_iv_indicator_activity_main"
+                android:background="@drawable/ico_havenew"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_team"
+            android:layout_width="@dimen/dp_insteadof_weight"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone" >
+            <ImageView
+                android:id="@+id/iv_team"
+                android:layout_width="@dimen/side_iv_small_group_activity_main"
+                android:layout_height="@dimen/side_iv_small_group_activity_main"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_iv_small_group_activity_main"
+                android:background="@drawable/menu_3"
+                android:contentDescription="@null" />
+            <TextView
+                android:id="@+id/txt_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_team"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_team_activity_main"
+                android:textColor="@color/letter_grey_deep_6" />
+            <ImageView
+                android:id="@+id/iv_team_indicator"
+                android:layout_width="@dimen/side_iv_indicator_activity_main"
+                android:layout_height="@dimen/side_iv_indicator_activity_main"
+                android:layout_marginLeft="@dimen/margin_left_iv_indicator_activity_main"
+                android:layout_marginTop="@dimen/margin_top_iv_indicator_activity_main"
+                android:background="@drawable/ico_havenew"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_mine"
+            android:layout_width="@dimen/dp_insteadof_weight"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/iv_mine"
+                android:layout_width="@dimen/side_iv_small_group_activity_main"
+                android:layout_height="@dimen/side_iv_small_group_activity_main"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_iv_small_group_activity_main"
+                android:background="@drawable/menu_4"
+                android:contentDescription="@null" />
+            <TextView
+                android:id="@+id/txt_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_mine"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_mine_activity_main"
+                android:textColor="@color/letter_grey_deep_6" />
+            <ImageView
+                android:id="@+id/iv_mine_indicator"
+                android:layout_width="@dimen/side_iv_indicator_activity_main"
+                android:layout_height="@dimen/side_iv_indicator_activity_main"
+                android:layout_marginLeft="@dimen/margin_left_iv_indicator_activity_main"
+                android:layout_marginTop="@dimen/margin_top_iv_indicator_activity_main"
+                android:background="@drawable/ico_havenew"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.movitech.grande.views.NoSlideViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom" />
+</RelativeLayout>

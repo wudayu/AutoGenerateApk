@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="allcitys">
+        <item>img_jinan@济南公司@jncitys</item>
+        <item>img_hefei@合肥公司@hfcitys</item>
+        <item>img_zhengzhou@郑州公司@zzcitys</item>
+        <item>img_nanchang@南昌公司@nccitys</item>
+        <item>img_nanjing@南京公司@njcitys</item>
+        <item>img_taiyuan@太原公司@tycitys</item>
+        <item>img_shanghai@上海公司@shcitys</item>
+        <item>img_haerbing@哈尔滨公司@hebcitys</item>
+        <item>img_chongqing@重庆公司@cqcitys</item>
+        <item>img_beijing@北京公司@bjcitys</item>
+        <item>img_shenyang@沈阳 公司@sycitys</item>
+        <item>img_wuhan@武汉 公司@whcitys</item>
+        <item>img_changsha@长沙 公司@cscitys</item>
+        <item>img_shenzhen@深圳 公司@szcitys</item>
+        <item>img_guangdong@广东公司@gdcitys</item>
+        <item>img_shijiazhuang@石家庄公司@sjzcitys</item>
+        <item>img_changchun@长春公司@cccitys</item>
+        <item>img_tianjing@天津公司@tjcitys</item>
+        <item>img_chendu@成都公司@cdcitys</item>
+        <item>img_hainan@海南公司@hncitys</item>
+        <item>img_nanzhou@兰州公司@lzcitys</item>
+        <item>img_xian@西安公司@xacitys</item>
+        <item>img_dongwan@东莞公司@dgcitys</item>
+        <item>img_huhehaote@呼和浩特公司@hhhtcitys</item>
+        <item>img_yinzhou@银川公司@yccitys</item>
+        <item>img_dalian@大连公司@dlcitys</item>
+        <item>img_yangjiang@阳江公司@yjcitys</item>
+        <item>img_nanning@南宁公司@nncitys</item>
+        <item>img_haihuadao@海花岛公司@hhdcitys</item>
+        <item>img_kunming@昆明公司@kmcitys</item>
+        <item>img_wunumuqi@乌鲁木齐公司@wlmqcitys</item>
+        <item>img_fuzhou@福州公司@fzcitys</item>
+        <item>img_guiyang@贵阳公司@gycitys</item>
+    </string-array>
+    <string-array name="jncitys">
+        <item>淄博</item>
+        <item>济宁</item>
+        <item>潍坊</item>
+        <item>聊城</item>
+        <item>泰安</item>
+        <item>临沂</item>
+        <item>莱芜</item>
+        <item>东营</item>
+        <item>济南</item>
+    </string-array>
+    <string-array name="hfcitys">
+        <item>合肥</item>
+        <item>宿州</item>
+        <item>蚌埠</item>
+        <item>六安</item>
+        <item>亳州</item>
+        <item>滁州</item>
+        <item>芜湖</item>
+        <item>铜陵</item>
+        <item>淮南</item>
+        <item>淮北</item>
+        <item>安庆</item>
+        <item>马鞍山</item>
+    </string-array>
+    <string-array name="zzcitys">
+        <item>郑州</item>
+        <item>安阳</item>
+        <item>洛阳</item>
+        <item>新乡</item>
+        <item>许昌</item>
+        <item>舞钢</item>
+        <item>信阳</item>
+    </string-array>
+    <string-array name="nccitys">
+        <item>南昌</item>
+        <item>吉安</item>
+        <item>九江</item>
+        <item>景德</item>
+        <item>新余</item>
+        <item>鹰潭</item>
+    </string-array>
+    <string-array name="njcitys">
+        <item>南京</item>
+        <item>扬州</item>
+        <item>镇江</item>
+        <item>宿迁</item>
+        <item>丹阳</item>
+        <!-- <item>常州</item> -->
+        <item>句容</item>
+        <item>淮安</item>
+        <item>连云港</item>
+    </string-array>
+    <string-array name="tycitys">
+        <item>太原</item>
+        <item>吕梁</item>
+        <item>运城</item>
+    </string-array>
+    <string-array name="shcitys">
+        <item>杭州</item>
+        <item>宁波</item>
+        <item>无锡</item>
+        <item>衢州</item>
+        <item>海盐</item>
+        <item>嘉兴</item>
+        <item>平湖</item>
+        <item>陆家嘴</item>
+    </string-array>
+    <string-array name="hebcitys">
+        <item>哈尔滨</item>
+        <item>牡丹</item>
+        <item>大庆</item>
+        <item>阿城</item>
+        <item>齐齐哈尔</item>
+        <item>资阳</item>
+
+    </string-array>
+    <string-array name="cqcitys">
+        <item>重庆</item>
+        <item>自贡</item>
+        <item>涪陵</item>
+    </string-array>
+    <string-array name="bjcitys">
+        <item>北京</item>
+    </string-array>
+    <string-array name="sycitys">
+        <item>沈阳</item>
+        <item>辽阳</item>
+        <item>盘锦</item>
+        <item>本溪</item>
+        <item>营口</item>
+        <item>鞍山</item>
+        <item>抚顺</item>
+        <item>济南</item>
+        <item>葫芦岛</item>
+    </string-array>
+    <string-array name="whcitys">
+        <item>武汉</item>
+        <item>襄阳</item>
+        <item>鄂州</item>
+        <item>宜昌</item>
+    </string-array>
+    <string-array name="cscitys">
+        <item>长沙</item>
+        <item>益阳</item>
+        <item>衡阳</item>
+        <item>株洲</item>
+        <item>岳阳</item>
+        <item>郴州</item>
+        <item>浏阳</item>
+    </string-array>
+    <string-array name="szcitys">
+        <item>深圳</item>
+        <item>潮州</item>
+    </string-array>
+    <string-array name="gdcitys">
+        <item>广东</item>
+        <item>云浮</item>
+        <item>中山</item>
+        <item>广州</item>
+    </string-array>
+    <string-array name="sjzcitys">
+        <item>廊坊</item>
+        <item>衡水</item>
+        <item>邢台</item>
+        <item>沧州</item>
+        <item>石家庄</item>
+    </string-array>
+    <string-array name="cccitys">
+        <item>长春</item>
+        <item>松原</item>
+        <item>吉林</item>
+        <item>乌兰浩特</item>
+    </string-array>
+    <string-array name="tjcitys">
+        <item>天津</item>
+        <item>唐山</item>
+        <item>秦皇岛</item>
+    </string-array>
+    <string-array name="cdcitys">
+        <item>成都</item>
+        <item>邛崃</item>
+        <item>彭山</item>
+        <item>资阳</item>
+    </string-array>
+    <string-array name="hncitys">
+        <item>海南</item>
+    </string-array>
+    <string-array name="lzcitys">
+        <item>兰州</item>
+        <item>西宁</item>
+        <item>武威</item>
+    </string-array>
+    <string-array name="xacitys">
+        <item>西安</item>
+        <item>杨凌</item>
+        <item>汉中</item>
+    </string-array>
+    <string-array name="dgcitys">
+        <item>东莞</item>
+    </string-array>
+    <string-array name="hhhtcitys">
+        <item>乌海</item>
+        <item>包头</item>
+        <item>呼和浩特</item>
+    </string-array>
+    <string-array name="yccitys">
+        <item>银川</item>
+        <item>吴忠恒</item>
+        <item>石嘴山</item>
+    </string-array>
+    <string-array name="dlcitys">
+        <item>大连</item>
+    </string-array>
+    <string-array name="yjcitys">
+        <item>阳江</item>
+        <item>湛江</item>
+    </string-array>
+    <string-array name="nncitys">
+        <item>南宁</item>
+        <item>柳州</item>
+        <item>北海</item>
+        <item>桂林</item>
+        <item>北海</item>
+        <item>钦州</item>
+        <item>防城港</item>
+    </string-array>
+    <string-array name="hhdcitys">
+        <item>海花岛</item>
+        <item>儋州</item>
+    </string-array>
+    <string-array name="kmcitys">
+        <item>昆明</item>
+        <item>曲靖</item>
+    </string-array>
+    <string-array name="wlmqcitys">
+        <item>伊宁</item>
+        <item>五家渠</item>
+    </string-array>
+    <string-array name="fzcitys">
+        <item>福州</item>
+        <item>石狮</item>
+    </string-array>
+    <string-array name="gycitys">
+        <item>贵阳</item>
+        <item>凯里</item>
+        <item>遵义</item>
+    </string-array>
+
+</resources>
