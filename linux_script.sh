@@ -2,8 +2,8 @@
 SYMBOL=wwwuuudddaaayyyuuu;
 # 定义原工程的名称
 ORIGIN_PROJECT=xcfcAndroid;
-# 定义Keystore文件夹
-KEYSTORE_FLODER=keystores/;
+# 定义Keystore文件夹名称
+KEYSTORE_FLODER=keystores;
 # 定义配置文件名称
 CONFIG_FILE=config_file
 
@@ -32,28 +32,19 @@ for ((i=1;i<=lines;++i)) do
 		echo j = $tmpIndex , val = $val
 		# 获取所有包含了需要修改的字段的文件
 		fileNeedReplace=`grep "$SYMBOL$tmpIndex" -rl $newProject`
-		# 替换获取到的文件中的响应字段
-		`sed -i '' "s/$SYMBOL$tmpIndex/$val/g" $fileNeedReplace 2>/dev/null`
+		if [ $j = 12 ] ;then
+			# keystore路径(对于项目内部来说的路径) # newProject
+			ksPath=..\\/$KEYSTORE_FLODER\\/$val
+			`sed -i '' "s/$SYMBOL$tmpIndex/$ksPath/g" $fileNeedReplace 2>/dev/null`
+		else
+			# 替换获取到的文件中的响应字段
+			`sed -i '' "s/$SYMBOL$tmpIndex/$val/g" $fileNeedReplace 2>/dev/null`
+		fi
 	done;
-
-	# keystore文件名在某一行中的序号
-	ksFileNameIndex=`expr $cols - 3`;
-	# keystore文件名
-	ksFileName=`awk "{if(NR==$i)print $1;}" config_file|cut -d ' ' -f $ksFileNameIndex`;
-	# keystore文件名在某一行中的序号
-	ksFilePassIndex=`expr $cols - 2`;
-	# keystore文件名
-	ksFilePass=`awk "{if(NR==$i)print $1;}" config_file|cut -d ' ' -f $ksFilePassIndex`;
-	# keystore文件名在某一行中的序号
-	ksAliasNameIndex=`expr $cols - 1`;
-	# keystore文件名
-	ksAliasName=`awk "{if(NR==$i)print $1;}" config_file|cut -d ' ' -f $ksAliasNameIndex`;
-	# keystore文件名在某一行中的序号
-	ksAliasPassIndex=`expr $cols - 0`;
-	# keystore文件名
-	ksAliasPass=`awk "{if(NR==$i)print $1;}" config_file|cut -d ' ' -f $ksAliasPassIndex`;
-
-	# keystore路径 # newProject
-	ksPath=$KEYSTORE_FLODER$filename
+	#`cd $newProject && android update project -p . -t android-20 && ant release && cd ..`
+	cd $newProject
+	android update project -p . -t android-20
+	ant release
+	cd ..
 	echo ''
 done;

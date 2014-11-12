@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 这里定义的尺寸，不变 -->
-<resources>
-    <dimen name="length_largest">10000dp</dimen>
-    <dimen name="round">200dp</dimen>
-</resources>
