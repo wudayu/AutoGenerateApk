@@ -56,7 +56,7 @@ for ((i=1;i<=lines;++i)) do
 	done;
 	# 进入新工程目录
 	cd $newProject
-	# 生成build.xml等文件
+	# 生成build.xml等文件 需要一些参数指定annotations
 	android update project -p . -n $newProject -t android-20
 	# 打包并签名
 	ant release
